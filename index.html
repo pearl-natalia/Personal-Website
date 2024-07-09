@@ -121,124 +121,6 @@
     </div>
 
     <div class="w3-row afterzoom l12 m12 s12">
-        <!-- new about section -->
-        <div class="w3-container aboutContainer"
-            style="width: 100vw;margin: 0;padding-left: 0;padding-right: 0;margin-top: 0;">
-            <div class="w3-row aboutMe" style="width: 100vw;">
-
-                <a id="dynamicLink1" href="#">
-                    <div class="w3-col abt1" style="height:100%;">
-                        <p id="text1" style="padding-left: 5%;padding-right: 5%;">Built BrainScape @ UWestern's SheHacks+
-                            hackathon</p>
-                    </div>
-                </a>
-                <div class="w3-col abt2-0" style="height:100%;">
-                    <p id="text2-0" style="padding-left: 5%;padding-right: 5%;">Canoed through Lake Louise</p>
-                </div>
-
-                <a id="dynamicLink2" href="#">
-                    <div class="w3-col abt2" style="height:100%;">
-                        <p id="text2" style="padding-left: 5%;padding-right: 5%;">Chairwoman of McMichael Canadian<br>Art
-                            Collection's Volunteer Committee</p>
-                    </div>
-                </a>
-                <a id="dynamicLink2-1" href="#">
-                    <div class="w3-col abt2-1" style="height:100%;">
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-row aboutMe2" style="width: 100vw;">
-                <a id="dynamicLink3" href="#">
-                    <div class="w3-col abt3" style="height:100%;">
-                        <p id="text3" style="padding-left: 5%;padding-right: 5%;width:80%">Built Autorithm @ Waterloo's
-                            Women in Engineering Hackathon </p>
-                    </div>
-                </a>
-                <div class="w3-col textMe" style="height:100%;text-align: justify;">
-                    <h3>About Me</h3>
-                    <h1>
-                        I'm a full-stack developer based in Toronto, interning @ <a class="aboutHover" style="text-decoration:none" href="https://generisgp.com/">Generis</a>. I have an avid interest 
-                        in Android and web development, and am currently building projects with AI to enhance automotive vehicles. Click on the images to see more!
-                    </h1>
-                </div>
-                <a id="dynamicLink4" href="#">
-                    <div class="w3-col abt4" style="height:100%;">
-                        <p id="text4" style="padding-left: 5%;padding-right: 5%;">NCWIT 2023 Ontario Recipient</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-row aboutMe" style="width: 100vw;">
-                <a id="dynamicLink5" href="#">
-                    <div class="w3-col abt5" style="height:100%;">
-                        <p id="text5" style="padding-left: 5%;padding-right: 5%;">Bungee jumped off a 160ft bridge in BC</p>
-                    </div>
-                </a>
-                <a id="dynamicLink6" href="#">
-                    <div class="w3-col abt6" style="height:100%;">
-                        <p id="text6" style="padding-left: 5%;padding-right: 5%;">Built an AR platform<br>from scratch</p>
-                    </div>
-                </a>
-                <a id="dynamicLink7" href="#">
-                    <div class="w3-col abt7" style="height:100%;">
-                        <p id="text7" style="padding-left: 10%;padding-right: 10%;">Hosted various networking events for
-                            UWaterloo students</p>
-                    </div>
-                </a>
-                <a id="dynamicLink8" href="#">
-                    <div class="w3-col abt8" style="height:100%;">
-                        <p id="text8" style="padding-left: 10%;padding-right: 10%;">Collaborated with Tesla to host an
-                            information &amp networking session</p>
-                    </div>
-                </a>
-                <div class="w3-col abt9" style="height:100%;">
-                </div>
-            </div>
-        </div>
-
-        <!-- changing link based on screen size -->
-        <script>
-            var link1 = document.getElementById('dynamicLink1');
-            var link2 = document.getElementById('dynamicLink2');
-            var link21 = document.getElementById('dynamicLink2-1');
-            var link3 = document.getElementById('dynamicLink3');
-            var link4 = document.getElementById('dynamicLink4');
-            var link5 = document.getElementById('dynamicLink5');
-            var link6 = document.getElementById('dynamicLink6');
-            var link7 = document.getElementById('dynamicLink7');
-            var link8 = document.getElementById('dynamicLink8');
-
-            changeLink();
-        
-            function changeLink() {
-                if (window.innerWidth < 1025) {
-                    // Change the link for smaller screens
-                    link1.href = 'https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop';
-                    link2.href = 'https://mcmichael.com/volunteers/';
-                    link21.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop';               
-                    link3.removeAttribute('href');
-                    link4.removeAttribute('href');
-                    link5.href = 'https://www.aspirations.org/aspirations-canada';
-                    link6.removeAttribute('href');
-                    link7.href = 'https://devpost.com/software/handsfree-y7lsbq';
-                    link8.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop';
-                } else {
-                    // Change the link for larger screens
-                    link1.href = 'https://devpost.com/software/brainscape';
-                    link2.href = 'https://mcmichael.com/volunteers/';
-                    link21.removeAttribute('href');
-                    link3.href = 'https://devpost.com/software/handsfree-y7lsbq';
-                    link4.href = 'https://www.aspirations.org/aspirations-canada';
-                    link5.removeAttribute('href');
-                    link6.href = 'https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop';
-                    link7.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop';
-                    link8.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop';
-                }
-            }
-            window.addEventListener('resize', changeLink);
-        </script>
-
         <!-- flower -->
         <!-- <div class="w3-col m8 l8 w3-hide-small"
             style="display: flex;justify-content: flex-end;align-items: flex-start;transform: translate(60px);">
@@ -280,7 +162,7 @@
                     <img class="w3-image" src="images/thumbnail17.png" style = "border-radius: 5px">
                     <div class="w3-row" style="padding-top: 20px;">
                         <h1 style="font-weight: bold !important;"><a href="https://github.com/pearl-natalia/siren/blob/6ab1feacddb17b2f37e56f9fe7ccba172d2e28af/README.md" style="text-decoration: none;">Siren - Computer Vision &amp; Geolocation Processing</a></h1>
-                        <h1 style="color: #827f7f;">A smart dash cam to autonomously monitor driving behavior, tracks route history, and detecst road violations.</h1>
+                        <h1 style="color: #827f7f;">A smart dash cam to autonomously monitor driving behavior, track route history, and detect road violations.</h1>
                     </div>
                 </div>
 
@@ -620,11 +502,128 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
+        <!-- new about section -->
+        <div class="w3-container aboutContainer"
+            style="width: 100vw;margin: 0;padding-left: 0;padding-right: 0;margin-top: 10vw;">
+            <div class="w3-row aboutMe" style="width: 100vw;">
+
+                <a id="dynamicLink1" href="#">
+                    <div class="w3-col abt1" style="height:100%;">
+                        <p id="text1" style="padding-left: 5%;padding-right: 5%;">Built BrainScape @ UWestern's SheHacks+
+                            hackathon</p>
+                    </div>
+                </a>
+                <div class="w3-col abt2-0" style="height:100%;">
+                    <p id="text2-0" style="padding-left: 5%;padding-right: 5%;">Canoed through Lake Louise</p>
+                </div>
+
+                <a id="dynamicLink2" href="#">
+                    <div class="w3-col abt2" style="height:100%;">
+                        <p id="text2" style="padding-left: 5%;padding-right: 5%;">Chairwoman of McMichael Canadian<br>Art
+                            Collection's Volunteer Committee</p>
+                    </div>
+                </a>
+                <a id="dynamicLink2-1" href="#">
+                    <div class="w3-col abt2-1" style="height:100%;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-row aboutMe2" style="width: 100vw;">
+                <a id="dynamicLink3" href="#">
+                    <div class="w3-col abt3" style="height:100%;">
+                        <p id="text3" style="padding-left: 5%;padding-right: 5%;width:80%">Built Autorithm @ Waterloo's
+                            Women in Engineering Hackathon </p>
+                    </div>
+                </a>
+                <div class="w3-col textMe" style="height:100%;text-align: justify;">
+                    <h3>About Me</h3>
+                    <h1>
+                        I'm a full-stack developer based in Toronto, interning @ <a class="aboutHover" style="text-decoration:none" href="https://generisgp.com/">Generis</a>. I have an avid interest 
+                        in Android and web development, and am currently building projects with AI to enhance automotive vehicles. Click on the images to see more!
+                    </h1>
+                </div>
+                <a id="dynamicLink4" href="#">
+                    <div class="w3-col abt4" style="height:100%;">
+                        <p id="text4" style="padding-left: 5%;padding-right: 5%;">NCWIT 2023 Ontario Recipient</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-row aboutMe" style="width: 100vw;">
+                <a id="dynamicLink5" href="#">
+                    <div class="w3-col abt5" style="height:100%;">
+                        <p id="text5" style="padding-left: 5%;padding-right: 5%;">Bungee jumped off a 160ft bridge in BC</p>
+                    </div>
+                </a>
+                <a id="dynamicLink6" href="#">
+                    <div class="w3-col abt6" style="height:100%;">
+                        <p id="text6" style="padding-left: 5%;padding-right: 5%;">Built an AR platform<br>from scratch</p>
+                    </div>
+                </a>
+                <a id="dynamicLink7" href="#">
+                    <div class="w3-col abt7" style="height:100%;">
+                        <p id="text7" style="padding-left: 10%;padding-right: 10%;">Hosted various networking events for
+                            UWaterloo students</p>
+                    </div>
+                </a>
+                <a id="dynamicLink8" href="#">
+                    <div class="w3-col abt8" style="height:100%;">
+                        <p id="text8" style="padding-left: 10%;padding-right: 10%;">Collaborated with Tesla to host an
+                            information &amp networking session</p>
+                    </div>
+                </a>
+                <div class="w3-col abt9" style="height:100%;">
+                </div>
+            </div>
+        </div>
+
+        <!-- changing link based on screen size -->
+        <script>
+            var link1 = document.getElementById('dynamicLink1');
+            var link2 = document.getElementById('dynamicLink2');
+            var link21 = document.getElementById('dynamicLink2-1');
+            var link3 = document.getElementById('dynamicLink3');
+            var link4 = document.getElementById('dynamicLink4');
+            var link5 = document.getElementById('dynamicLink5');
+            var link6 = document.getElementById('dynamicLink6');
+            var link7 = document.getElementById('dynamicLink7');
+            var link8 = document.getElementById('dynamicLink8');
+
+            changeLink();
+        
+            function changeLink() {
+                if (window.innerWidth < 1025) {
+                    // Change the link for smaller screens
+                    link1.href = 'https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop';
+                    link2.href = 'https://mcmichael.com/volunteers/';
+                    link21.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop';               
+                    link3.removeAttribute('href');
+                    link4.removeAttribute('href');
+                    link5.href = 'https://www.aspirations.org/aspirations-canada';
+                    link6.removeAttribute('href');
+                    link7.href = 'https://devpost.com/software/handsfree-y7lsbq';
+                    link8.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop';
+                } else {
+                    // Change the link for larger screens
+                    link1.href = 'https://devpost.com/software/brainscape';
+                    link2.href = 'https://mcmichael.com/volunteers/';
+                    link21.removeAttribute('href');
+                    link3.href = 'https://devpost.com/software/handsfree-y7lsbq';
+                    link4.href = 'https://www.aspirations.org/aspirations-canada';
+                    link5.removeAttribute('href');
+                    link6.href = 'https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop';
+                    link7.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop';
+                    link8.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop';
+                }
+            }
+            window.addEventListener('resize', changeLink);
+        </script>
+
         <!-- Contact Section -->
-        <div class="w3-container contact-div" style="padding-bottom: 70px;background-color: black;">
+        <div class="w3-container contact-div" style="padding-bottom: 70px;margin-top:100px;background-color: black;">
             <div class="w3-row-padding contactMe">
 
                 <div class="w3-col contactButtons l5 w3-hide-medium w3-hide-small" style="padding-left: 100px;">
