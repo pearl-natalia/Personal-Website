@@ -328,6 +328,9 @@ body {
     width: calc(90vw);
     top: 65vh;
   }
+  .swiper-pagination{
+    padding-top:25px;
+  }
 }
 
 
@@ -380,6 +383,12 @@ body {
     width: calc(70vw);
     top: 40.5vh;
   }
+  .swiper-pagination{
+    padding-top:40px;
+  }
+
+
+
 }
 
 /* mobile and ipad */
