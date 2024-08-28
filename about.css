@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Kana Sans';
+    src: url('fonts/Kana Sans Bold.woff') format('woff');    
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kana Sans';
+    src: url('fonts/Kana Sans Regular.woff') format('woff');
+    font-weight:100;
+    font-style: normal;
+}
+
+@media screen and (max-width: 767px) {p{font-size: 15px;}}
+@media screen and (min-width: 577px) and (max-width: 1024px){p{font-size: 18px;}}
+@media screen and (min-width: 1025px) {p{font-size: 20px;}}
+
+@media screen and (max-width: 767px) {h1{font-size: 13px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){h1{font-size:20px;}}
+@media screen and (min-width: 1025px) {h1{font-size: 16px;}}
+
+@media screen and (max-width: 767px) {h2{font-size: 20px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){h2{font-size: 23px;}}
+@media screen and (min-width: 1025px) {h2{font-size: 25px;}}
+
+@media screen and (max-width: 767px) {h3{font-size: 30px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){h3{font-size: 45px;}}
+@media screen and (min-width: 1025px) {h3{font-size: 50px;}}
+
+@media screen and (max-width: 767px) {h4{font-size: 8px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){h4{font-size: 11px;}}
+@media screen and (min-width: 1025px) {h4{font-size: 13px;}}
+
+@media screen and (max-width: 767px) {h5{font-size: 35px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){h5{font-size: 60px;}}
+@media screen and (min-width: 1025px) {h5{font-size: 70px;}}
+
+@media screen and (max-width: 767px) {h6{font-size: 25px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){h6{font-size: 35px;}}
+@media screen and (min-width: 1025px) {h6{font-size: 40px;}}
+
+@media screen and (max-width: 767px) {.work-div{padding-left: 10px;}}
+@media screen and (min-width: 768px) and (max-width: 1024px){.work-div{padding-left: 20px;}}
+@media screen and (min-width: 1025px) {.work-div{padding-left:80px}}
+
+/* body */
+.html{overflow-x: hidden;}
+p, h1, h2, h3, h6{color: white;}
+body {
+  background-color: black;
+  overflow: hidden;
+  color-scheme: dark;
+  font-family: 'Kana Sans', sans-serif !important;
+  height:100%;
+
+}
+
+
+/* text highlight color */
+::-moz-selection{ 
+  background: rgb(0, 0, 0);
+  color: rgb(229, 212, 255)
+}
+::selection{
+  background: rgb(0, 0, 0);
+  color: rgb(229, 212, 255)
+}
+
+.about-div{
+  place-items: center;
+}
+
+.aboutHover:hover{
+  color: #b0b0b0;
+}
+
+.aboutContainer{
+  height:100%;
+}
+
+/* about me page */
+.textMe{
+  transition: background-color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abt1, .abt2, .abt2-0,.abt2-1,.abt3, .abt4, .abt5, .abt6, .abt7, .abt8, .abt9{
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  text-align: center;
+
+}
+
+.abt1, .abt2, .abt4, .abt7{
+  background-position: right center;
+}
+
+.abt2-0,.abt2-1, .abt8, .abt9{width:0;}
+
+.abt1::before,.abt2-0::before,.abt2::before,.abt3::before,.abt4::before,.abt5::before,.abt6::before,.abt7::before,.abt8::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+#text1,#text2-0,#text2,#text3,#text4,#text5,#text6,#text7,#text8 {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: opacity 0.3s;
+  z-index: 1000;
+  margin-top: 0;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .aboutContainer{height:66vh;}
+  .aboutMe{height:18vh;}
+  .aboutMe2{height:40vh;}
+}
+
+
+
+/* desktop & ipad */
+@media (min-width: 768px) {
+  .textMe{
+    padding: 7vh 3vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2vw;
+  }  
+}
+
+/* mobile and ipad */
+@media (max-width: 1024px) {
+  .abt1{width:25vw;background-image: url('about/glasses.png');}
+  .abt2{width:30vw;background-image: url('about/gallery.png');}
+  .abt2-1{width:45vw;background-image: url('about/tesla.png');}
+  .abt3{width:0vw;}
+  .textMe{width:100vw;padding-left:10vw;padding-right:10vw;}
+  .abt4{width:0vw;}
+  .abt5{
+    width:25vw;
+    background-image: url('about/award.png');
+    background-position: center bottom;
+    background-size: cover;
+  }
+  .abt6{width:25vw;background-image: url('about/bungee.png');}
+  .abt7{
+    width:25vw;
+    background-image: url('about/hackathonMobile.png');
+    background-position: center top;
+  }
+  .abt8{
+    width:25vw;
+    background-image: url('about/sponsorship.png');
+    background-position: right bottom;
+  }
+  .abt1,.abt2,.abt3,.abt4,.abt5,.abt6,.abt7{border-radius: 0;}
+}
+
+
+/* only desktop */
+@media(min-width: 1025px){
+  .aboutMe{height:30vh;}
+  .aboutMe2{height:33vh;}
+  .abt1{
+    width:36vw;
+    background-image: url('about/speaking.png');
+  }
+  .abt2-0{
+    width:20vw;
+    background-image: url('about/canoe.png');
+    background-position: center center;
+    cursor: default;
+  }
+  .abt2{
+    width:40vw;background-image: url('about/gallery.png');
+  }
+  .abt3{
+    width:22vw;
+    background-image: url('about/hackathon.png');
+    background-position: center center;
+  }
+  .textMe{
+    width:45vw;
+    padding-left: 0;
+  }
+  .abt4{
+    width:29vw;
+    background-image: url('about/award.png');
+    background-position: center center;
+  }
+  .abt5{
+    width:25vw;background-image: url('about/bungee.png');
+    cursor: default;
+  }
+  .abt6{
+    width:15vw;
+    background-image: url('about/glasses.png');
+    background-position: center center;
+    background-size: cover;
+  }
+  .abt7{
+    width:25vw;
+    background-image: url('about/sponsorship.png');
+  }
+  .abt8{
+    width:30vw;
+    background-image: url('about/tesla.png');
+    background-position: left center;
+  }
+  .abt1,.abt2-0,.abt2, .abt3, .abt4, .abt5, .abt6, .abt7, .abt8{
+    margin:1vw;
+    border-radius: 5px;
+  }
+  .abt2-0,.abt2,.abt6,.abt7,.abt8{margin-left: 0;}
+  .abt1:hover::before,.abt2-0:hover::before,.abt2:hover::before,.abt3:hover::before,.abt5:hover::before,.abt6:hover::before,.abt7:hover::before,.abt8:hover::before {
+    opacity: 0.2; 
+  }
+  .abt1:hover #text1,.abt2-0:hover #text2-0,.abt2:hover #text2,.abt3:hover #text3,.abt4:hover #text4,.abt5:hover #text5,.abt6:hover #text6,.abt7:hover #text7,.abt8:hover #text8{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.398);
+    margin-top: 0;
+  }
+
+}
+
+/* tablet only */
+@media(min-width: 768px) and (max-width:1024px){
+  .aboutMe{height:26vh;}
+  .aboutMe2{height:46vh;}
+  .aboutContainer{height:100vh;}
+}

@@ -13,128 +13,155 @@
 <body>
     <div id="menu-container">
         <div id="menu">
-            <a href="#projects" id="projects" class="menu-items">[projects]</a>
-            <a href="#about" id="about" class="menu-items">[about]</a>
+            <a href="#project-container" id="projects" class="menu-items">[projects]</a>
+            <a href="#about-container" id="about" class="menu-items">[about]</a>
         </div>
 
-        <b style="font-size: 50px;font-weight: bolder;">Pearl Natalia</b>
-        <br><br><a href="https://se-webring.xyz/" class = "menu-items" target="_blank">Software Engineering @ UWaterloo ↗</a>
-        <br> <span style="font-size:20px">Developing AI for automative vehicles &amp; transportation systems</span>
+        <b id="title" style="font-weight: bolder;">Pearl Natalia</b>
+        <br><br><a href="https://se-webring.xyz/" class = "menu-items subtitle" target="_blank">Software Engineering @ UWaterloo ↗</a>
+        <br> <span class="subtitle">Developing AI for automative vehicles &amp; transportation systems.</span>
 
         <div class="contact-btn-container">
             <a href="https://github.com/pearl-natalia" class="contact-btn" target="_blank">GitHub ↗</a>
             <a href="mailto:pnatalia@uwaterloo.ca" class="contact-btn" target="_blank">Email ↗</a>
             <a href="https://www.linkedin.com/in/pearlnatalia" class="contact-btn" target="_blank">LinkedIn ↗</a>
+            <a href="https://x.com/pearl_natz" class="contact-btn" target="_blank">Twitter ↗</a>
         </div>
     </div>
 
-    <div id="project-container">
-        <div class="project-header">Machine Learning</div>        
-        <div id="project1" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
+    <div id="project-container"> 
+        <div class="project-card">
+            <div id="project0" class="project" style="background-image: url('img/car-bg.webp');filter: saturate(100%);">
+                <div class="project-category">Perception &amp; World Modeling</div>
+                <div class="project-image-container"><img class="project-image" src="img/car.webp" style="filter: saturate(140%);"></div>
+            </div>
+            <div id="project0-description" class="project-description"> 
+                <a href="https://github.com/pearl-natalia/RC-Car" target="_blank"><span style="color:rgb(144, 157, 222)"><b>Self-Driving Car (In Progress) ↗</b></span></a>
+                <br>An autonomous vehicle using PID controllers and sensors.
+            </div>
+        </div>      
+        <div class="project-card">
+            <div id="project1" class="project" style="background-image: url('img/siren-bg.webp');">
+                <div class="project-category">Embedded AI</div>
+                <div class="project-image-container"><img class="project-image" src="img/siren.webp" style="filter: saturate(150%);"></div>
+            </div>
+            <div id="project1-description" class="project-description"> 
+                <a href="https://github.com/pearl-natalia/Siren" target="_blank"><span style="color:rgb(144, 157, 222)"><b>Siren ↗</b></span></a>
+                <br>An AI-powered dash cam to monitor driving behavior.
+            </div>
         </div>
-        <div id="project2" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
+        <div class="project-card">
+            <div id="project2" class="project" style="background-image: url('img/ocr-bg.webp');">
+                <div class="project-category">Computer Vision</div>
+                <div class="project-image-container"><img class="project-image" src="img/ocr.webp"></div>
+            </div>
+            <div id="project2-description" class="project-description">
+                <a href="https://github.com/pearl-natalia/MathOCR" target="_blank"><span style="color:rgb(144, 157, 222)"><b>MathOCR ↗</b></span></a>
+                <br>Calculate hand written equations via neural networks and image processing.
+            </div>
         </div>
-        <div id="project3" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
+        <div class="project-card">
+            <div id="project3" class="project" style="background-image: url('img/sos-bg.webp');">
+                <div class="project-category">AI Wearable for SOS</div>
+                <div class="project-image-container"><img class="project-image" src="img/sos.webp"></div>
+            </div>
+            <div id="project3-description" class="project-description">
+                <a href="https://devpost.com/software/group-123" target="_blank"><span style="color:rgb(144, 157, 222)"><b>Guardian ↗</b></span></a>
+                <br>Contextual audio and video analysis of emergencies.
+            </div>
         </div>
-        <div id="project4" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
+        <div class="project-card">
+            <div id="project4" class="project" style="background-image: url('img/ar-bg.webp');filter: saturate(80%);">
+                <div class="project-category">AR Development</div>
+                <div class="project-image-container"><img class="project-image" src="img/AR.webp" style="filter: saturate(200%);"></div>
+            </div>
+            <div id="project4-description" class="project-description">
+                <a href="https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <span style="color:rgb(144, 157, 222)"><b>Résuview ↗</b></span></a>
+                <br>AR environment to display individuals' resumes next to their faces.
+            </div>
         </div>
-        <div id="project1-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
+        <div class="project-card">
+            <div id="project5" class="project" style="background-image: url('img/cleanse-bg.webp');">
+                <div class="project-category">Embeddings &amp; Web Scraping</div>
+                <div class="project-image-container"><img class="project-image" src="img/cleanse.webp" style="filter: saturate(150%);"></div>
+            </div>
+            <div id="project5-description" class="project-description"> 
+                <span style="color:rgb(144, 157, 222)"><b>Data Cleanser</b></span>
+                <br>Automating a data cleansing process for a sheet of prospective clients.
+            </div>
         </div>
-        <div id="project2-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
+        <div class="project-card">
+            <div id="project6" class="project" style="background-image: url('img/robot-bg.webp');">
+                <div class="project-category">Robotics</div>
+                <div class="project-image-container"><img class="project-image" src="img/robot.webp"></div>
+            </div>
+            <div id="project6-description" class="project-description">
+                <a href = "https://devpost.com/software/handsfree-y7lsbq" target="_blank">
+                <span style="color:rgb(144, 157, 222)"><b>Autorithm ↗</b></span></a>
+                <br>An EV3 robot to automate food-package assembly.
+            </div>
         </div>
-        <div id="project3-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
+        <div class="project-card">
+            <div id="project7" class="project" style="background-image: url('img/spave-bg.webp');">
+                <div class="project-category">Android Dev</div>
+                <div class="project-image-container"><img class="project-image" src="img/spave.webp"></div>
+            </div>
+            <div id="project7-description" class="project-description">
+                <a href="https://github.com/pearl-natalia/SPAVE" target="_blank">
+                <span style="color:rgb(144, 157, 222)"><b>SPΛVE ↗</b></span></a>
+                <br>A budgeting app to optimize user savings when shopping.
+            </div>
         </div>
-        <div id="project4-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
+        <div class="project-card">
+            <div id="project8" class="project" style="background-image: url('img/generis-bg.webp');filter: saturate(80%);">
+                <div class="project-category">Web Dev Internship</div>
+                <div class="project-image-container"><img class="project-image" src="img/generis.webp" style="filter: saturate(200%);"></div>
+            </div>
+            <div id="project8-description" class="project-description">
+                <a href="https://generisgp.com/" target="_blank">
+                <span style="color:rgb(144, 157, 222)"><b>Generis ↗</b></span></a>
+                <br>An autonomous vehicle using PID controllers and sensors.
+            </div>
         </div>
-
-        <div class="project-header">Hardware &amp; Fullstack Dev</div>        
-        <div id="project5" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
+        <div class="project-card">
+            <div id="project9" class="project" style="background-image: url('img/ninja-bg.webp');">
+                <div class="project-category">Programming Instructor</div>
+                <div class="project-image-container"><img class="project-image" src="img/ninja.webp"></div>
+            </div>
+            <div id="project9-description" class="project-description">
+                <a href="https://www.codeninjas.com/" target="_blank">
+                <span style="color:rgb(144, 157, 222)"><b>Code Ninjas ↗</b></span></a>
+                <br>Taught game development and designed a children's programming curriculum.
+            </div>
         </div>
-        <div id="project6" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
+        <div class="project-card">
+            <div id="project10" class="project" style="background-image: url('img/hackathon-bg.webp');filter: saturate(80%);">
+                <div class="project-category">Hackathon Lead</div>
+                <div class="project-image-container"><img class="project-image" src="img/hackathon.webp" style="filter: saturate(200%);"></div>
+            </div>
+            <div id="project10-description" class="project-description">
+                <a href="https://yrhacks.ca/" target="_blank">
+                <span style="color:rgb(144, 157, 222)"><b>YR Hacks ↗</b></span></a>
+                <br>Planned a district-wide hackathon of 350+ students.
+            </div>
         </div>
-        <div id="project7" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
-        </div>
-        <div id="project8" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
-        </div>
-        <div id="project5-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-        <div id="project6-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-        <div id="project7-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-        <div id="project8-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-
-        <div class="project-header">Game Dev</div>        
-        <div id="project9" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
-        </div>
-        <div id="project10" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
-        </div>
-        <div id="project11" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
-        </div>
-        <div id="project12" class="project" style="background-image: url('assets/background-1.png');">
-            <div class="project-category">Self-driving</div>
-            <div class="project-image-container"><img class="project-image" src="assets/siren.webp"></div>
-        </div>
-        <div id="project9-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-        <div id="project10-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-        <div id="project11-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
-        </div>
-        <div id="project12-description" class="project" style="padding:20px 0 0 10px;height:15vh !important"> 
-            <span style="color:rgb(144, 157, 222)"><b>Self-Driving Car</b></span>
-            <br>An autonomous vehicle using PID controllers and sensors.
+        <div class="project-card">
+            <div id="project11" class="project" style="background-image: url('img/mario-bg.webp');filter: saturate(80%);">
+                <div class="project-category">Game Dev</div>
+                <div class="project-image-container"><img class="project-image" src="img/mario.webp" style="filter: saturate(200%);"></div>
+            </div>
+            <div id="project11-description" class="project-description">
+                <a href="https://github.com/pearl-natalia/Super-Mario-Bros" target="_blank">
+                <span style="color:rgb(144, 157, 222)"><b>Super Mario Bros ↗</b></span></a>
+                <br>An interactive replication of a Super Mario Bros level.
+            </div>
         </div>
     </div>
 
     <div id="about-container">
-        <h2 style="color:white">About Pearl Natalia</h2>
-        <p>Software Engineering student specializing in AI for automotive vehicles and transportation systems.</p>
+        <iframe src="about.html"></iframe>
     </div>
+
 </body>
 </html>
