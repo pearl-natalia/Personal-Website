@@ -9,61 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Bold menu item based on page
   const projectLink = document.getElementById("projects");
   const aboutLink = document.getElementById("about");
-  const projectContainer = document.getElementById("project-container");
-  const aboutContainer = document.getElementById("about-container");
-
-  // Bold clicked menu item
-  function updateBold(clickedLink) {
-    projectLink.classList.remove("bold");
-    aboutLink.classList.remove("bold");
-    clickedLink.classList.add("bold");
-  }
-
-  // Show the appropriate section
-  function showSection(section) {
-    if (section === "projects") {
-      projectContainer.style.visibility = "visible";
-      projectContainer.style.opacity = "1";
-      aboutContainer.style.visibility = "hidden";
-      aboutContainer.style.opacity = "0";
-      window.location.hash = "#portfolio";
-      updateBold(projectLink);
-      document.title = "Portfolio - Pearl Natalia";
-    } else if (section === "about") {
-      projectContainer.style.visibility = "hidden";
-      projectContainer.style.opacity = "0";
-      aboutContainer.style.visibility = "visible";
-      aboutContainer.style.opacity = "1";
-      window.location.hash = "#profile";
-      updateBold(aboutLink);
-      document.title = "Profile - Pearl Natalia";
+  function setInitialBold() {
+    const currentPage = window.location.pathname.split("/").pop();
+    if (currentPage === "index.html") {
+      projectLink.classList.add("bold");
+      aboutLink.classList.remove("bold");
+    } else if (currentPage === "profile.html") {
+      aboutLink.classList.add("bold");
+      projectLink.classList.remove("bold");
     }
-    window.scrollTo(0, 0);
   }
 
-  // Event listeners for menu links
-  projectLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    showSection("projects");
-  });
-
-  aboutLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    showSection("about");
-  });
-
-  // Hash changes
-  window.addEventListener("hashchange", function () {
-    const section = window.location.hash.substring(1);
-    showSection(section);
-  });
-
-  // Initial load
-  const initialSection = window.location.hash.substring(1) || "projects";
-  showSection(initialSection);
-  updateBold(projectLink);
+  // Call setInitialBold to set the correct bold link based on the current page
+  setInitialBold();
 
   // Define the aspect ratio (width / height)
   const aspectRatio = 1400 / 2000;
