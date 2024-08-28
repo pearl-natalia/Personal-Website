@@ -9,12 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Bold menu item based on page
   const projectLink = document.getElementById("projects");
   const aboutLink = document.getElementById("about");
   function setInitialBold() {
     const currentPage = window.location.pathname.split("/").pop();
-    if (currentPage === "index.html") {
+    if (currentPage === "" || currentPage === "index.html") {
       projectLink.classList.add("bold");
       aboutLink.classList.remove("bold");
     } else if (currentPage === "profile.html") {
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Call setInitialBold to set the correct bold link based on the current page
   setInitialBold();
 
   // Define the aspect ratio (width / height)
