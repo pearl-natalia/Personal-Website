@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Kana Sans';
-    src: url('fonts/Kana Sans Bold.woff') format('woff');    
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Kana Sans';
+  src: url('fonts/Kana Sans Bold.woff') format('woff');    
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Kana Sans';
-    src: url('fonts/Kana Sans Regular.woff') format('woff');
-    font-weight:100;
-    font-style: normal;
+  font-family: 'Kana Sans';
+  src: url('fonts/Kana Sans Regular.woff') format('woff');
+  font-weight:100;
+  font-style: normal;
 }
 
 @media screen and (max-width: 767px) {p{font-size: 15px;}}
@@ -50,7 +50,7 @@ body {
   background-color: black;
   overflow: hidden;
   color-scheme: dark;
-  font-family: 'Kana Sans', sans-serif !important;
+  font-family: 'Kana Sans', sans-serif;
 }
 
 
@@ -144,27 +144,27 @@ body {
 
 /* mobile and ipad */
 @media (max-width: 1024px) {
-  .abt1{width:25vw;background-image: url('about/glasses.png');}
-  .abt2{width:30vw;background-image: url('about/gallery.png');}
-  .abt2-1{width:45vw;background-image: url('about/tesla.png');}
+  .abt1{width:25vw;background-image: url('../about/glasses.png');}
+  .abt2{width:30vw;background-image: url('../about/gallery.png');}
+  .abt2-1{width:45vw;background-image: url('../about/tesla.png');}
   .abt3{width:0vw;}
   .textMe{width:100vw;padding-left:10vw;padding-right:10vw;}
   .abt4{width:0vw;}
   .abt5{
     width:25vw;
-    background-image: url('about/award.png');
+    background-image: url('../about/award.png');
     background-position: center bottom;
     background-size: cover;
   }
-  .abt6{width:25vw;background-image: url('about/bungee.png');}
+  .abt6{width:25vw;background-image: url('../about/bungee.png');}
   .abt7{
     width:25vw;
-    background-image: url('about/hackathonMobile.png');
+    background-image: url('../about/hackathonMobile.png');
     background-position: center top;
   }
   .abt8{
     width:25vw;
-    background-image: url('about/sponsorship.png');
+    background-image: url('../about/sponsorship.png');
     background-position: right bottom;
   }
   .abt1,.abt2,.abt3,.abt4,.abt5,.abt6,.abt7{border-radius: 0;}
@@ -177,20 +177,20 @@ body {
   .aboutMe2{height:33vh;}
   .abt1{
     width:36vw;
-    background-image: url('about/speaking.png');
+    background-image: url('../about/speaking.png');
   }
   .abt2-0{
     width:20vw;
-    background-image: url('about/canoe.png');
+    background-image: url('../about/canoe.png');
     background-position: center center;
     cursor: default;
   }
   .abt2{
-    width:40vw;background-image: url('about/gallery.png');
+    width:40vw;background-image: url('../about/gallery.png');
   }
   .abt3{
     width:22vw;
-    background-image: url('about/hackathon.png');
+    background-image: url('../about/hackathon.png');
     background-position: center center;
   }
   .textMe{
@@ -199,26 +199,26 @@ body {
   }
   .abt4{
     width:29vw;
-    background-image: url('about/award.png');
+    background-image: url('../about/award.png');
     background-position: center center;
   }
   .abt5{
-    width:25vw;background-image: url('about/bungee.png');
+    width:25vw;background-image: url('../about/bungee.png');
     cursor: default;
   }
   .abt6{
     width:15vw;
-    background-image: url('about/glasses.png');
+    background-image: url('../about/glasses.png');
     background-position: center center;
     background-size: cover;
   }
   .abt7{
     width:25vw;
-    background-image: url('about/sponsorship.png');
+    background-image: url('../about/sponsorship.png');
   }
   .abt8{
     width:30vw;
-    background-image: url('about/tesla.png');
+    background-image: url('../about/tesla.png');
     background-position: left center;
   }
   .abt1,.abt2-0,.abt2, .abt3, .abt4, .abt5, .abt6, .abt7, .abt8{
