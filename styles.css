@@ -22,6 +22,14 @@ a:hover{
     color:rgb(197, 197, 197)
 }
 
+/* text highlight color */
+::-moz-selection{ 
+    background: rgba(144, 157, 222, 0.604);
+}
+::selection{
+    background: rgba(144, 157, 222, 0.604);
+}
+
 /*Body*/
 body {
     font-family: 'Kana Sans', sans-serif !important;
@@ -33,13 +41,7 @@ body {
     height:100vh;
 }
 
-/* text highlight color */
-::-moz-selection{ 
-    background: white;
-  }
-  ::selection{
-    background: rgba(144, 157, 222, 0.604);
-  }x
+
 
 #menu-container {
     height: auto;
