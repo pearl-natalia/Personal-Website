@@ -33,6 +33,14 @@ body {
     height:100vh;
 }
 
+/* text highlight color */
+::-moz-selection{ 
+    background: white;
+  }
+  ::selection{
+    background: rgba(144, 157, 222, 0.604);
+  }x
+
 #menu-container {
     height: auto;
     margin: 0 2% 0 2%;
