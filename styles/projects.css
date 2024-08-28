@@ -28,6 +28,7 @@ body {
     background-color: rgb(0, 0, 0);
     color:rgb(179, 179, 179);
     cursor:default;
+    width:100%;
 }
 
 #readme {
@@ -46,7 +47,7 @@ a:hover{
 }
 
 #menu-container{
-    margin:100px 0px 0px 0px;
+    margin:100px 0px 50px 0px;
     width:100%;
     display: flex;
     flex-direction: row;
@@ -75,7 +76,6 @@ a:hover{
 #github {
     filter: invert(43%) sepia(20%) saturate(950%) hue-rotate(189deg) brightness(130%) contrast(85%);
     transition: filter 0.3s ease-in-out;
-    height:30px;
     width:100%;
     padding-left:15px;
     
@@ -84,21 +84,16 @@ a:hover{
     filter: invert(43%) sepia(20%) saturate(950%) hue-rotate(189deg) brightness(90%) contrast(85%);
 }
 
-.menu-items{
-    font-size:30px;
-}
-
 #linkedin {
     background-color:none; 
     border-radius: 4px; 
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 #linkedin svg {
     fill: rgb(144, 157, 222);
     width: 100%; 
-    height: 25px; 
     transition: fill 0.3s ease-in-out;
     display: block; /* Remove space below the SVG */
 }
@@ -108,13 +103,16 @@ a:hover{
 }
 
 
-.tool-btn-container {
+#tool-btn-container {
     display: flex;
     flex-direction: row;
     justify-content: left; 
     gap: 10px;
-    padding: 50px 0 30px 0;
-    width:100%; 
+    padding: 5px 0;
+    flex-wrap: wrap;
+    width:100%;
+    height:auto;
+    margin-bottom: 50px;
 }
 .tool-btn {
     background-color: rgb(39, 39, 39);
@@ -123,7 +121,6 @@ a:hover{
     text-align: center;
     cursor: pointer;
     transition: 0.3s ease-in-out; 
-    font-size: 14px;
 }
 .tool-btn:hover {
     background-color: rgb(41, 41, 41);
@@ -131,13 +128,25 @@ a:hover{
 }
 
 @media screen and (min-width: 1280px) {/*desktop*/
-    body{margin:50px 400px;}
+    body{margin:50px 400px;width:calc(100vw - 800px);}
+    .tool-btn{font-size: 14px;}
+    #linkedin svg {height: 25px;}
+    .menu-items{font-size:30px;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){ /*tablet*/
-    #readme{margin: 75px 200px 75px 200px;}
+    body{margin: 50px 50px;width:calc(100vw - 100px);}
+    .tool-btn{font-size: 12px;}
+    #linkedin svg {height: 25px;}
+    #github{height:30px;}
+    .menu-items{font-size:30px;}
+    
 }
 
 @media screen and (max-width: 767px) { /*mobile*/
-    #readme{margin: 50px 25px 50px 25px;}
+    body{margin: 50px 25px;width:calc(100vw - 50px);}
+    .tool-btn{font-size: 10px;}
+    #linkedin svg {height: 25px;}
+    #github{height:24px;}
+    .menu-items{font-size:25px;}
 }
