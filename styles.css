@@ -39,6 +39,9 @@ body {
     padding-bottom: 3px;
     cursor:default;
     height:100vh;
+    width:100vw;
+    padding:0;
+    margin: 0;
 }
 
 
@@ -243,10 +246,13 @@ body {
     }
     #menu{
         gap:10px;
-        padding:40px 2px 20px 20px;
+        padding:40px 0px 40px 20px;
     }
     .menu-items{
         font-size:18px;
+    }
+    .contact-btn{
+        font-size:11px;
     }
     #title{
         font-size: 35px;
@@ -257,8 +263,10 @@ body {
     .project-description, .project-category{
         font-size:14px;
     }
-    .contact-btn{
-        font-size:11px;
+    .project-description{
+        padding-left: 6px;
+        padding-right:6px;
+        width: calc(100vw - 20px);
     }
     .project-category{
         padding:7px 12px;
