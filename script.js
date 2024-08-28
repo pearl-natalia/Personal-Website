@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectContainer = document.getElementById("project-container");
   const aboutContainer = document.getElementById("about-container");
 
+  // Bold clicked menu item
+  function updateBold(clickedLink) {
+    projectLink.classList.remove("bold");
+    aboutLink.classList.remove("bold");
+    clickedLink.classList.add("bold");
+  }
+
   // Show the appropriate section
   function showSection(section) {
     if (section === "projects") {
@@ -36,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo(0, 0);
   }
 
-  // Bold clicked menu item
-  function updateBold(clickedLink) {
-    projectLink.classList.remove("bold");
-    aboutLink.classList.remove("bold");
-    clickedLink.classList.add("bold");
-  }
-
   // Event listeners for menu links
   projectLink.addEventListener("click", function (event) {
     event.preventDefault();
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial load
   const initialSection = window.location.hash.substring(1) || "projects";
   showSection(initialSection);
+  updateBold(projectLink);
 
   // Define the aspect ratio (width / height)
   const aspectRatio = 1400 / 2000;
