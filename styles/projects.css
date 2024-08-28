@@ -84,21 +84,21 @@ a:hover{
     filter: invert(43%) sepia(20%) saturate(950%) hue-rotate(189deg) brightness(90%) contrast(85%);
 }
 
-#linkedin {
+#linkedin, #googlePlay {
     background-color:none; 
     border-radius: 4px; 
     display: inline-block;
     padding-left: 15px;
 }
 
-#linkedin svg {
+#linkedin svg, #googlePlay svg {
     fill: rgb(144, 157, 222);
     width: 100%; 
     transition: fill 0.3s ease-in-out;
     display: block; /* Remove space below the SVG */
 }
 
-#linkedin svg:hover {
+#linkedin svg:hover, #googlePlay svg:hover {
     fill: rgb(107, 116, 162);
 }
 
@@ -130,14 +130,14 @@ a:hover{
 @media screen and (min-width: 1280px) {/*desktop*/
     body{margin:50px 400px;width:calc(100vw - 800px);}
     .tool-btn{font-size: 14px;}
-    #linkedin svg {height: 25px;}
+    #linkedin svg, #googlePlay svg{height: 25px;}
     .menu-items{font-size:30px;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){ /*tablet*/
     body{margin: 50px 50px;width:calc(100vw - 100px);}
     .tool-btn{font-size: 12px;}
-    #linkedin svg {height: 25px;}
+    #linkedin svg, #googlePlay svg{height: 25px;}
     #github{height:30px;}
     .menu-items{font-size:30px;}
     
@@ -146,7 +146,7 @@ a:hover{
 @media screen and (max-width: 767px) { /*mobile*/
     body{margin: 50px 25px;width:calc(100vw - 50px);}
     .tool-btn{font-size: 10px;}
-    #linkedin svg {height: 25px;}
+    #linkedin svg, #googlePlay svg {height: 25px;}
     #github{height:24px;}
     .menu-items{font-size:25px;}
 }
