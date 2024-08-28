@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       projectContainer.style.opacity = "1";
       aboutContainer.style.visibility = "hidden";
       aboutContainer.style.opacity = "0";
-      window.location.hash = "#projects";
+      window.location.hash = "#portfolio";
       updateBold(projectLink);
       document.title = "Portfolio - Pearl Natalia";
     } else if (section === "about") {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       projectContainer.style.opacity = "0";
       aboutContainer.style.visibility = "visible";
       aboutContainer.style.opacity = "1";
-      window.location.hash = "#about";
+      window.location.hash = "#profile";
       updateBold(aboutLink);
       document.title = "Profile - Pearl Natalia";
     }
