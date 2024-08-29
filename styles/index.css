@@ -16,10 +16,11 @@
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover{
-    color:rgb(197, 197, 197)
+    color:rgb(197, 197, 197);
 }
 
 /* text highlight color */
@@ -115,7 +116,6 @@ body {
     position: relative;
     overflow: hidden;
     filter: saturate(1.6);
-    cursor: pointer;
     z-index: 5;
     transition: background-color 0.3s ease-in-out;
 }
