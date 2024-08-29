@@ -46,31 +46,27 @@ a:hover{
     color:rgb(107, 116, 162);
 }
 
-#menu-container{
-    margin:100px 0px 50px 0px;
-    width:100%;
+#menu-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    height:40px;
+    height: 40px; /* Height for the container */
 }
 
-#menu-top, #menu-bottom{
-    width:100%;
-    height:100%;
+#menu-top, #menu-bottom {
     display: flex;
     align-items: center;
-    color:rgb(144, 157, 222);
-    padding:20px 0;
+    color: rgb(144, 157, 222);
 }
 
-#menu-top{
-    justify-content:flex-start;
+#menu-top {
+    flex: 3; 
+    justify-content: flex-start;
 }
 
-#menu-bottom{
+#menu-bottom {
+    flex: 7; 
     justify-content: flex-end;
-    padding-right: 5px;
-    
 }
 
 #github {
@@ -89,13 +85,13 @@ a:hover{
     border-radius: 4px; 
     display: inline-block;
     padding-left: 15px;
+    padding-right:0;
 }
 
 #linkedin svg, #googlePlay svg {
     fill: rgb(144, 157, 222);
-    width: 100%; 
     transition: fill 0.3s ease-in-out;
-    display: block; /* Remove space below the SVG */
+    display: block; 
 }
 
 #linkedin svg:hover, #googlePlay svg:hover {
@@ -112,7 +108,6 @@ a:hover{
     flex-wrap: wrap;
     width:100%;
     height:auto;
-    margin-bottom: 50px;
 }
 .tool-btn {
     background-color: rgb(39, 39, 39);
@@ -128,25 +123,29 @@ a:hover{
 }
 
 @media screen and (min-width: 1280px) {/*desktop*/
-    body{margin:50px 400px;width:calc(100vw - 800px);}
+    body{margin:100px 400px 50px 400px;width:calc(100vw - 800px);}
     .tool-btn{font-size: 14px;}
     #linkedin svg, #googlePlay svg{height: 25px;}
     .menu-items{font-size:30px;}
+    #menu-container{margin-bottom:25px;}
+    #tool-btn-container{margin-bottom: 50px;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){ /*tablet*/
-    body{margin: 50px 50px;width:calc(100vw - 100px);}
-    .tool-btn{font-size: 12px;}
-    #linkedin svg, #googlePlay svg{height: 25px;}
-    #github{height:30px;}
-    .menu-items{font-size:30px;}
+    body{margin:100px 100px 50px 100px;width:calc(100vw - 200px);}
+    .tool-btn{font-size: 16px;}
+    #linkedin svg, #googlePlay svg, #github{height: 40px;}
+    .menu-items{font-size:40px;}
+    #menu-container{margin-bottom:50px;}
+    #tool-btn-container{margin-bottom: 50px;}
     
 }
 
 @media screen and (max-width: 767px) { /*mobile*/
-    body{margin: 50px 25px;width:calc(100vw - 50px);}
-    .tool-btn{font-size: 10px;}
-    #linkedin svg, #googlePlay svg {height: 25px;}
-    #github{height:24px;}
-    .menu-items{font-size:25px;}
+    body{margin:40px 25px 30px 25px;width:calc(100vw - 50px);}
+    .tool-btn{font-size: 9px;}
+    #linkedin svg, #googlePlay svg, #github{height: 20px;}
+    .menu-items{font-size:20px;}
+    #menu-container{margin-bottom:10px;}
+    #tool-btn-container{margin-bottom: 30px;}
 }
