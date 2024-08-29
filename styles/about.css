@@ -176,11 +176,11 @@ body {
   .aboutMe{height:30vh;}
   .aboutMe2{height:33vh;}
   .abt1{
-    width:36vw;
-    background-image: url('../about/speaking.png');
+    width:33vw;
+    background-image: url('../about/guardian.png');
   }
   .abt2-0{
-    width:20vw;
+    width:23vw;
     background-image: url('../about/canoe.png');
     background-position: center center;
     cursor: default;
@@ -231,7 +231,7 @@ body {
   }
   .abt1:hover #text1,.abt2-0:hover #text2-0,.abt2:hover #text2,.abt3:hover #text3,.abt4:hover #text4,.abt5:hover #text5,.abt6:hover #text6,.abt7:hover #text7,.abt8:hover #text8{
     opacity: 1;
-    background: rgba(0, 0, 0, 0.398);
+    background: rgba(0, 0, 0, 0.671);
     margin-top: 0;
   }
 
