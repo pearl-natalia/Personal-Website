@@ -146,7 +146,7 @@ body {
 @media (max-width: 1024px) {
   .abt1{width:25vw;background-image: url('../about/glasses.png');}
   .abt2{width:30vw;background-image: url('../about/gallery.png');}
-  .abt2-1{width:45vw;background-image: url('../about/tesla.png');}
+  .abt2-1{width:45vw;background-image: url('../about/mit.png'); background-position: center center;}
   .abt3{width:0vw;}
   .textMe{width:100vw;padding-left:10vw;padding-right:10vw;}
   .abt4{width:0vw;}
@@ -177,7 +177,7 @@ body {
   .aboutMe2{height:33vh;}
   .abt1{
     width:33vw;
-    background-image: url('../about/guardian.png');
+    background-image: url('../about/mit.png');
   }
   .abt2-0{
     width:23vw;
