@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const lightModeToggle = document.getElementById('light-mode-toggle');
+  if (localStorage.getItem('lightMode') === 'enabled') {
+    document.body.classList.add('light-mode');
+  }
+  function applyTheme() {
+    const lightModeEnabled = document.body.classList.contains('light-mode');
+    const iframe = document.querySelector('#about-container iframe');
+    if (iframe) {
+      iframe.contentWindow.postMessage({ theme: lightModeEnabled ? 'light' : 'dark' }, '*');
+    }
+  }
+  lightModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    localStorage.setItem('lightMode', document.body.classList.contains('light-mode') ? 'enabled' : 'disabled');
+    applyTheme();
+  });
+  applyTheme();
+  
   // Height of project descriptions
   var project2Description = document.getElementById("project2-description");
   if (project2Description) {
@@ -43,4 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (viewportWidth < 768) divHeight %= 80;
   aboutContainerDiv.style.height = `${divHeight}px`;
+
+
+
 });

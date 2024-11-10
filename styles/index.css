@@ -19,6 +19,7 @@ a{
     cursor: pointer;
 }
 
+
 a:hover{
     color:rgb(197, 197, 197);
 }
@@ -45,18 +46,16 @@ body {
     margin: 0;
 }
 
-
-
 #menu-container {
     height: auto;
     margin: 0 2% 0 2%;
     padding-bottom:40px;
-
 }
 #menu{
     display: flex;
     justify-content: end;
     flex-direction: row;
+    align-items: center;
     gap:10px;
 }
 .menu-items{
@@ -187,6 +186,60 @@ body {
     border: none; 
     overflow: hidden;
 }
+/* Light mode button styling */
+#light-mode-toggle {
+    border-radius: 50%;
+    background-color: #151515;
+    cursor:pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #484848;
+}
+.icon {
+    position: absolute;
+    /* transition: opacity 0.3s ease; */
+}
+.sun {
+    opacity: 0;
+    color:#8a8a8a
+}
+.moon {
+    opacity: 1;
+}
+/* Changes in light mode */
+body.light-mode, body.light-mode .menu-items{
+    color: black;
+    background-color: #fefefe;
+}
+
+body.light-mode #light-mode-toggle{
+    background-color: #fefefe;
+    border: 1px solid #8a8a8a;
+}
+
+body.light-mode #menu-subtitle-svg{
+    fill: black;
+}
+
+body.light-mode #bio_url:hover{
+    color:rgb(121, 121, 121);
+}
+
+body.light-mode #menu-subtitle-svg:hover{
+    fill:rgb(121, 121, 121);
+}
+
+body.light-mode #project-container, body.light-mode #about-container, body.light-mode #menu-container {
+    background-color: #fefefe;
+}
+
+body.light-mode .sun {
+    opacity: 1;
+}
+body.light-mode .moon {
+    opacity: 0;
+}
 
 @media screen and (min-width: 1280px) {/*desktop*/
     .project-card {
@@ -194,10 +247,16 @@ body {
     }
     #menu{
         gap:10px;
-        padding:25px 0px 20px 20px;
+        padding:25px 0px 20px 25px;
     }
     .menu-items{
         font-size:25px;
+    }
+    #light-mode-toggle{
+        width:45px;
+        height:45px;
+        font-size: 25px;
+
     }
     .menu-svg, .project-svg{
         width:15px;
@@ -237,6 +296,11 @@ body {
     .menu-items{
         font-size:25px;
     }
+    #light-mode-toggle{
+        width:45px;
+        height:45px;
+        font-size: 25px;
+    }
     .menu-svg, .project-svg{
         width:14px;
         height:14px;
@@ -268,9 +332,14 @@ body {
     }
     #menu{
         gap:10px;
-        padding:40px 0px 40px 20px;
+        padding:40px 10px 40px 20px;
     }
     .menu-items{
+        font-size:18px;
+    }
+    #light-mode-toggle{
+        width:38px;
+        height:38px;
         font-size:18px;
     }
     .menu-svg{
@@ -304,6 +373,9 @@ body {
     }
     .project-category{
         padding:7px 12px;
+    }
+    #menu-content{
+        padding-left:10px;
     }
     /* UNCOMMENT IF I NEED A PLACEHOLDER PROJECT IN THE FUTURE */
     /* #placeholder-1-project-card, 
