@@ -170,6 +170,10 @@ body.light-mode h6 {
   color: black;
 }
 
+body.light-mode .abt-text {
+  color: white;
+}
+
 
 /* text highlight color */
 ::-moz-selection {
@@ -398,8 +402,9 @@ body.light-mode h6 {
 
   .abt3 {
     width: 22vw;
-    background-image: url('../about/hackathon.png');
+    background-image: url('../about/test.png');
     background-position: center center;
+    height: 100%;
   }
 
   .textMe {
@@ -480,6 +485,20 @@ body.light-mode h6 {
   .abt8:hover #text8 {
     opacity: 1;
     background: rgba(0, 0, 0, 0.671);
+    margin-top: 0;
+  }
+
+  body.light-mode .abt1:hover #text1,
+  body.light-mode .abt2-0:hover #text2-0,
+  body.light-mode .abt2:hover #text2,
+  body.light-mode .abt3:hover #text3,
+  body.light-mode .abt4:hover #text4,
+  body.light-mode .abt5:hover #text5,
+  body.light-mode .abt6:hover #text6,
+  body.light-mode .abt7:hover #text7,
+  body.light-mode .abt8:hover #text8 {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.428);
     margin-top: 0;
   }
 
