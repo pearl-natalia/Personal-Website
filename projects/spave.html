@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Pearl Natalia - SPΛVE" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://pearlnatalia.com" />
-    <link rel="icon" type="image/x-icon" href="../meta/favicon.ico">
-    <meta property="og:image:url" content="../meta/spavePreview.png" />
-    <meta property="og:description" content="A budgeting app to optimize user savings when shopping." />
-    <link href="https://fonts.googleapis.com/css2?family=Kana+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/projects.css">
 
-    <title>SPΛVE - Pearl Natalia</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Pearl Natalia - SPΛVE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://pearlnatalia.com" />
+  <link rel="icon" type="image/x-icon" href="../meta/favicon.ico">
+  <meta property="og:image:url" content="../meta/spavePreview.png" />
+  <meta property="og:description" content="A budgeting app to optimize user savings when shopping." />
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../styles/projects.css">
+
+  <title>SPΛVE - Pearl Natalia</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../script.js"></script>
+
 </head>
+
 <body>
   <div id="menu-container">
     <div id="menu-top">
       <a class="menu-items" id="back-arrow" href="https://www.pearlnatalia.com/index.html">[ ← ]</a>
     </div>
     <div id="menu-bottom">
-        <span class="menu-items"><span style="font-weight:bold;">SPΛVE</span></span>
-        <a href="https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share" id="googlePlay">
-          <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 256 283"><path fill="#8f9dde" d="M119.553 134.916L1.06 259.061a32.14 32.14 0 0 0 47.062 19.071l133.327-75.934z"/>
-            <path fill="#656d95" d="M239.37 113.814L181.715 80.79l-64.898 56.95l65.162 64.28l57.216-32.67a31.345 31.345 0 0 0 0-55.537z"/>
-            <path fill="#ffffff" d="M1.06 23.487A30.6 30.6 0 0 0 0 31.61v219.327a32.3 32.3 0 0 0 1.06 8.124l122.555-120.966z"/>
-            <path fill="#8f9dde" d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z"/>
-          </svg>
-        </a>
+      <span class="menu-items"><span style="font-weight:bold;">SPΛVE</span></span>
+      <a href="https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share" id="googlePlay">
+        <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 256 283">
+          <path fill="#8f9dde" d="M119.553 134.916L1.06 259.061a32.14 32.14 0 0 0 47.062 19.071l133.327-75.934z" />
+          <path fill="#656d95"
+            d="M239.37 113.814L181.715 80.79l-64.898 56.95l65.162 64.28l57.216-32.67a31.345 31.345 0 0 0 0-55.537z" />
+          <path fill="#ffffff"
+            d="M1.06 23.487A30.6 30.6 0 0 0 0 31.61v219.327a32.3 32.3 0 0 0 1.06 8.124l122.555-120.966z" />
+          <path fill="#8f9dde"
+            d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z" />
+        </svg>
+      </a>
       <span class="menu-items"><span style="font-weight:bold;"></span></span>
       <a href="https://github.com/pearl-natalia/SPAVE/tree/main" style="display: flex; align-items: center;">
         <img class="menu-items" id="github" alt="GitHub" src="https://github.githubassets.com/favicons/favicon.svg">
       </a>
     </div>
+    <button id="light-mode-toggle" class="menu-items">
+      <i class="fas fa-sun icon sun"></i>
+      <i class="fas fa-moon icon moon"></i>
+    </button>
   </div>
-  
+
   <div id="tool-btn-container">
     <div class="tool-btn">Java</div>
     <div class="tool-btn">XML</div>
@@ -46,7 +58,7 @@
 
   <div id="readme">Loading README...</div>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       fetch('https://raw.githubusercontent.com/pearl-natalia/SPAVE/main/README.md')
         .then(response => response.text())
         .then(text => {
@@ -58,6 +70,7 @@
           document.getElementById('readme').innerHTML = 'Failed to load README.';
         });
     });
-    </script>
+  </script>
 </body>
+
 </html>

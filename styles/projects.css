@@ -6,17 +6,19 @@
 /* text highlight color */
 ::-moz-selection {
     background: rgba(144, 157, 222, 0.604);
+    color: white;
 }
 
 ::selection {
     background: rgba(144, 157, 222, 0.604);
+    color: white;
 }
 
 /*Body*/
 body {
     font-family: 'Oxygen', sans-serif;
     overflow-x: hidden !important;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     color: rgb(179, 179, 179);
     cursor: default;
     width: 100%;
@@ -50,6 +52,7 @@ a:hover {
     display: flex;
     align-items: center;
     color: rgb(144, 157, 222);
+    padding-right: 20px;
 }
 
 #menu-top {
@@ -121,6 +124,76 @@ a:hover {
     color: rgb(255, 255, 255)
 }
 
+/* light and dark mode */
+body.light-mode {
+    color: black;
+    background-color: #ffffff;
+}
+
+#light-mode-toggle {
+    border-radius: 50%;
+    background-color: #151515;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #484848;
+    transition: 0.3s ease-in-out;
+}
+
+body.light-mode #light-mode-toggle {
+    background-color: #fefefe;
+    border: 1px solid #8a8a8a;
+}
+
+body.light-mode #light-mode-toggle {
+    color: black;
+    background-color: #fefefe;
+}
+
+body.light-mode #light-mode-toggle:hover {
+    filter: brightness(90%);
+}
+
+#light-mode-toggle:hover {
+    filter: brightness(150%);
+}
+
+body.light-mode .tool-btn {
+    background-color: rgb(179, 179, 179);
+    color: rgb(102, 102, 102);
+}
+
+body.light-mode .tool-btn:hover {
+    color: rgb(128, 128, 128);
+}
+
+.icon {
+    position: absolute;
+}
+
+.sun {
+    opacity: 0;
+    color: #8a8a8a
+}
+
+.moon {
+    opacity: 1;
+}
+
+body.light-mode .sun {
+    opacity: 1;
+}
+
+body.light-mode .moon {
+    opacity: 0;
+}
+
+body.light-mode #googlePlay svg path[fill="#ffffff"] {
+    fill: rgb(165, 174, 217);
+}
+
 @media screen and (min-width: 1280px) {
 
     /*desktop*/
@@ -148,6 +221,13 @@ a:hover {
 
     #tool-btn-container {
         margin-bottom: 50px;
+    }
+
+    #light-mode-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+
     }
 }
 
@@ -181,6 +261,12 @@ a:hover {
         margin-bottom: 50px;
     }
 
+    #light-mode-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -211,5 +297,11 @@ a:hover {
 
     #tool-btn-container {
         margin-bottom: 30px;
+    }
+
+    #light-mode-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
     }
 }
