@@ -17,10 +17,6 @@ a:hover {
     color: white;
 }
 
-#light-mode-toggle:hover {
-    filter: brightness(85%);
-}
-
 /* text highlight color */
 ::-moz-selection {
     background: rgba(144, 157, 222, 0.604);
@@ -69,7 +65,7 @@ body {
 #about-container {
     position: absolute;
     width: 100%;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease-in-out;
     background-color: black;
 }
 
@@ -180,8 +176,16 @@ body {
 .project-description {
     padding: 20px 10px 20px 5px;
     width: calc(100% - 15px);
-    height: auto"
+    height: auto;
+}
 
+.project-description a span {
+    color: rgb(144, 157, 222);
+    transition: color 0.3s ease-in-out;
+}
+
+.project-description a span:hover {
+    color: rgb(121, 131, 185);
 }
 
 #about-container {
@@ -209,6 +213,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid #484848;
+    transition: 0.3s ease-in-out;
 }
 
 .icon {
@@ -241,6 +246,10 @@ body.light-mode #menu-subtitle-svg {
     fill: black;
 }
 
+body.light-mode #menu-subtitle-svg:hover {
+    fill: rgb(145, 19, 19);
+}
+
 body.light-mode #bio_url:hover {
     color: rgb(121, 121, 121);
 }
@@ -264,12 +273,24 @@ body.light-mode .moon {
 }
 
 .description-text {
-    color: #727272;
+    color: #aaaaaa;
 }
 
+body.light-mode .description-text {
+    color: #656565;
+}
+
+body.light-mode #light-mode-toggle:hover {
+    filter: brightness(90%);
+}
+
+#light-mode-toggle:hover {
+    filter: brightness(150%);
+}
+
+/* desktop */
 @media screen and (min-width: 1280px) {
 
-    /*desktop*/
     .project-card {
         width: calc(25vw - 8px);
     }
@@ -323,11 +344,18 @@ body.light-mode .moon {
     .project-category {
         padding: 10px 20px;
     }
+
+    .menu-svg,
+    #menu-subtitle-svg,
+    .project-svg {
+        position: relative;
+        top: 2px;
+    }
 }
 
+/* tablet */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
-    /*tablet*/
     .project-card {
         width: calc(33vw - 8px);
     }
@@ -375,11 +403,18 @@ body.light-mode .moon {
     .project-category {
         padding: 7px 12px;
     }
+
+    .menu-svg,
+    #menu-subtitle-svg,
+    .project-svg {
+        position: relative;
+        top: 2px;
+    }
 }
 
+/* mobile */
 @media screen and (max-width: 767px) {
 
-    /*mobile*/
     #project-container {
         width: 100vw;
     }
@@ -447,6 +482,13 @@ body.light-mode .moon {
 
     #menu-content {
         padding-left: 10px;
+    }
+
+    .menu-svg,
+    #menu-subtitle-svg,
+    .project-svg {
+        position: relative;
+        top: 1px;
     }
 
     /* UNCOMMENT IF I NEED A PLACEHOLDER PROJECT IN THE FUTURE */
