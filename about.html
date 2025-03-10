@@ -10,18 +10,16 @@
     <script src="script.js"></script>
     <script>
         window.addEventListener('message', (event) => {
-        if (event.data && event.data.theme) {
-            document.body.classList.toggle('light-mode', event.data.theme === 'light');
-        }
+            if (event.data && event.data.theme) {
+                document.body.classList.toggle('light-mode', event.data.theme === 'light');
+            }
         });
-  </script>
+    </script>
 </head>
 
 <body>
-    <div class="w3-container aboutContainer"
-        style="width: 100vw;padding-left: 0;padding-right: 0;">
+    <div class="w3-container aboutContainer" style="width: 100vw;padding-left: 0;padding-right: 0;">
         <div class="w3-row aboutMe" style="width: 100vw;">
-
             <a id="dynamicLink1" href="#">
                 <div class="w3-col abt1" style="height:100%;">
                     <p id="text1" style="padding-left: 5%;padding-right: 5%;">HackMIT 2024</p>
@@ -46,13 +44,15 @@
         <div class="w3-row aboutMe2" style="width: 100vw;">
             <a id="dynamicLink3" href="#">
                 <div class="w3-col abt3" style="height:100%;">
-                    <p id="text3" style="padding-left: 5%;padding-right: 5%;width:80%">Built a robotic arm in &lt;12 hours </p>
+                    <p id="text3" style="padding-left: 5%;padding-right: 5%;width:80%">Built a robotic rover in &lt;12
+                        hours </p>
                 </div>
             </a>
             <div class="w3-col textMe" style="height:100%;text-align: justify;">
                 <h3>About Me</h3>
-                <h1>SWE Intern @ <a class="aboutHover" style="text-decoration:none" 
-                    href="https://pointclickcare.com/">PointClickCare</a>. Studying Software Engineering @ UWaterloo. 
+                <h1>SWE Intern @ <a class="aboutHover" style="text-decoration:none"
+                        href="https://pointclickcare.com/">PointClickCare</a>. Studying Software Engineering @
+                    UWaterloo.
                     Click or hover on the images to see more:
                 </h1>
             </div>
@@ -89,4 +89,5 @@
         </div>
     </div>
 </body>
+
 </html>
