@@ -1,100 +1,97 @@
 /* Fonts */
-@font-face {
-    font-family: 'Kana Sans';
-    src: url('fonts/Kana Sans Bold.woff') format('woff');    
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Kana Sans';
-    src: url('fonts/Kana Sans Regular.woff') format('woff');
-    font-weight:100;
-    font-style: normal;
-}
 .bold {
     font-weight: bold;
 }
+
 /* text highlight color */
-::-moz-selection{ 
+::-moz-selection {
     background: rgba(144, 157, 222, 0.604);
 }
-::selection{
+
+::selection {
     background: rgba(144, 157, 222, 0.604);
 }
+
 /*Body*/
 body {
-    font-family: 'Kana Sans', sans-serif !important;
+    font-family: 'Oxygen', sans-serif;
     overflow-x: hidden !important;
     background-color: rgb(0, 0, 0);
-    color:rgb(179, 179, 179);
-    cursor:default;
-    width:100%;
+    color: rgb(179, 179, 179);
+    cursor: default;
+    width: 100%;
 }
 
 #readme {
-    font-family: Arial, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     line-height: 1.6;
 }
 
-a{
+a {
     text-decoration: none;
-    color:rgb(144, 157, 222);
+    color: rgb(144, 157, 222);
     transition: color 0.3s ease-in-out;
 }
 
-a:hover{
-    color:rgb(107, 116, 162);
+a:hover {
+    color: rgb(107, 116, 162);
 }
 
 #menu-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 40px; /* Height for the container */
+    height: 40px;
+    /* Height for the container */
 }
 
-#menu-top, #menu-bottom {
+#menu-top,
+#menu-bottom {
     display: flex;
     align-items: center;
     color: rgb(144, 157, 222);
 }
 
 #menu-top {
-    flex: 3; 
+    flex: 3;
     justify-content: flex-start;
 }
 
 #menu-bottom {
-    flex: 7; 
+    flex: 7;
     justify-content: flex-end;
 }
 
 #github {
     filter: invert(43%) sepia(20%) saturate(950%) hue-rotate(189deg) brightness(130%) contrast(85%);
     transition: filter 0.3s ease-in-out;
-    width:100%;
-    padding-left:15px;
-    
+    width: 100%;
+    padding-left: 15px;
+
 }
+
 #github:hover {
     filter: invert(43%) sepia(20%) saturate(950%) hue-rotate(189deg) brightness(90%) contrast(85%);
 }
 
-#linkedin, #googlePlay {
-    background-color:none; 
-    border-radius: 4px; 
+#linkedin,
+#googlePlay {
+    background-color: none;
+    border-radius: 4px;
     display: inline-block;
     padding-left: 15px;
-    padding-right:0;
+    padding-right: 0;
 }
 
-#linkedin svg, #googlePlay svg {
+#linkedin svg,
+#googlePlay svg {
     fill: rgb(144, 157, 222);
     transition: fill 0.3s ease-in-out;
-    display: block; 
+    display: block;
 }
 
-#linkedin svg:hover, #googlePlay svg:hover {
+#linkedin svg:hover,
+#googlePlay svg:hover {
     fill: rgb(107, 116, 162);
 }
 
@@ -102,50 +99,117 @@ a:hover{
 #tool-btn-container {
     display: flex;
     flex-direction: row;
-    justify-content: left; 
+    justify-content: left;
     gap: 10px;
     padding: 5px 0;
     flex-wrap: wrap;
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
 }
+
 .tool-btn {
     background-color: rgb(39, 39, 39);
     padding: 5px 15px;
     border-radius: 17px;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s ease-in-out; 
+    transition: 0.3s ease-in-out;
 }
+
 .tool-btn:hover {
     background-color: rgb(41, 41, 41);
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255)
 }
 
-@media screen and (min-width: 1280px) {/*desktop*/
-    body{margin:100px 400px 50px 400px;width:calc(100vw - 800px);}
-    .tool-btn{font-size: 14px;}
-    #linkedin svg, #googlePlay svg{height: 25px;}
-    .menu-items{font-size:30px;}
-    #menu-container{margin-bottom:25px;}
-    #tool-btn-container{margin-bottom: 50px;}
+@media screen and (min-width: 1280px) {
+
+    /*desktop*/
+    body {
+        margin: 100px 400px 50px 400px;
+        width: calc(100vw - 800px);
+    }
+
+    .tool-btn {
+        font-size: 14px;
+    }
+
+    #linkedin svg,
+    #googlePlay svg {
+        height: 25px;
+    }
+
+    .menu-items {
+        font-size: 30px;
+    }
+
+    #menu-container {
+        margin-bottom: 25px;
+    }
+
+    #tool-btn-container {
+        margin-bottom: 50px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px){ /*tablet*/
-    body{margin:100px 100px 50px 100px;width:calc(100vw - 200px);}
-    .tool-btn{font-size: 16px;}
-    #linkedin svg, #googlePlay svg, #github{height: 40px;}
-    .menu-items{font-size:40px;}
-    #menu-container{margin-bottom:50px;}
-    #tool-btn-container{margin-bottom: 50px;}
-    
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /*tablet*/
+    body {
+        margin: 100px 100px 50px 100px;
+        width: calc(100vw - 200px);
+    }
+
+    .tool-btn {
+        font-size: 16px;
+    }
+
+    #linkedin svg,
+    #googlePlay svg,
+    #github {
+        height: 40px;
+    }
+
+    .menu-items {
+        font-size: 40px;
+    }
+
+    #menu-container {
+        margin-bottom: 50px;
+    }
+
+    #tool-btn-container {
+        margin-bottom: 50px;
+    }
+
 }
 
-@media screen and (max-width: 767px) { /*mobile*/
-    body{margin:40px 25px 30px 25px;width:calc(100vw - 50px);}
-    .tool-btn{font-size: 9px;}
-    #linkedin svg, #googlePlay svg, #github{height: 20px;}
-    .menu-items{font-size:20px;}
-    #menu-container{margin-bottom:10px;}
-    #tool-btn-container{margin-bottom: 30px;}
+@media screen and (max-width: 767px) {
+
+    /*mobile*/
+    body {
+        margin: 40px 25px 30px 25px;
+        width: calc(100vw - 50px);
+    }
+
+    .tool-btn {
+        font-size: 9px;
+    }
+
+    #linkedin svg,
+    #googlePlay svg,
+    #github {
+        height: 20px;
+    }
+
+    .menu-items {
+        font-size: 20px;
+    }
+
+    #menu-container {
+        margin-bottom: 10px;
+    }
+
+    #tool-btn-container {
+        margin-bottom: 30px;
+    }
 }

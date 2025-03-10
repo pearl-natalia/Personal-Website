@@ -11,7 +11,7 @@
     <meta property="og:url" content="http://pearlnatalia.com" />
     <meta property="og:image:url" content="meta/mainPreview.png" />
     <meta property="og:description" content="Pearl Nataia is a software engineer at the University of Waterloo." />
-    <link href="https://fonts.googleapis.com/css2?family=Kana+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="script.js"></script>
@@ -26,7 +26,7 @@
     <div id="menu-container">
         <div id="menu">
             <a href="index.html" id="projects" class="menu-items">[portfolio]</a>
-            <a href="profile.html" id="about" class="menu-items">[about me]</a>
+            <a href="profile.html" id="about" class="menu-items">[about]</a>
             <button id="light-mode-toggle" class="menu-items">
                 <i class="fas fa-sun icon sun"></i>
                 <i class="fas fa-moon icon moon"></i>
@@ -101,7 +101,9 @@
                         </svg>
                     </span>
                 </a>
-                <br>Building patient software for hospitals (EHR).
+                <p class="description-text">Optimizing infrastructure for EHR systems & working with distributed
+                    databases to handle millions of
+                    patient records.</p>
             </div>
         </div>
         <div class="project-card">
@@ -123,7 +125,8 @@
                         </svg>
                     </span>
                 </a>
-                <br>AI agent startup for automating product development.
+                <p class="description-text">Building agents for an AI startup to automate product development processes.
+                </p>
             </div>
         </div>
         <div class="project-card">
@@ -136,7 +139,7 @@
             </a>
             <div id="project1.3-description" class="project-description">
                 <a href="https://www.watonomous.ca/">
-                    <span style="color:rgb(144, 157, 222)"><b>Watonomous</b>
+                    <span style="color:rgb(144, 157, 222)"><b>WATonomous</b>
                         <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" stroke="currentColor" stroke-width="0.5"
                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -145,14 +148,13 @@
                         </svg>
                     </span>
                 </a>
-                <br>Perception for self-driving cars.
+                <p class="description-text">Working on the perception team of a self-driving car design team.</p>
             </div>
         </div>
 
         <div class="project-card">
             <a
                 href="https://www.linkedin.com/posts/pearlnatalia_last-week-marked-the-end-of-my-internship-activity-7233961003628072961-RobH?utm_source=share&utm_medium=member_desktop">
-
                 <div id="project1" class="project" style="background-image: url('img/siren-bg.webp');">
                     <div class="project-category">Web Dev Internship</div>
                     <div class="project-image-container"><img class="project-image" src="img/generis.webp"
@@ -171,7 +173,9 @@
                         </svg>
                     </span>
                 </a>
-                <br>Web dev & automation with ML.
+                <p class="description-text">Rebuilt 15 websites, automated web dev processes, and streamlined internal
+                    company processes with
+                    Machine Learning.</p>
 
             </div>
         </div>
@@ -193,18 +197,33 @@
                         </svg>
                     </span>
                 </a>
-                <br>OCR to calculate hand written equations via neural networks and image processing.
+                <p class="description-text">A low-level OCR implementation to calculate hand written equations via
+                    neural networks and image
+                    processing.</p>
             </div>
         </div>
         <div class="project-card">
-            <div id="project5" class="project" style="background-image: url('img/cleanse-bg.webp');">
-                <div class="project-category">Embeddings &amp; Web Scraping</div>
-                <div class="project-image-container"><img class="project-image" src="img/cleanse.webp"
-                        style="filter: saturate(150%);"></div>
-            </div>
-            <div id="project5-description" class="project-description">
-                <span style="color:rgb(144, 157, 222)"><b>Data Cleanser</b></span>
-                <br>Automating a data cleansing process for a sheet of prospective clients.
+            <a href="projects/siren.html">
+                <div id="project8" class="project"
+                    style="background-image: url('img/generis-bg.webp');filter: saturate(80%);">
+                    <div class="project-category">Embedded AI</div>
+                    <div class="project-image-container"><img class="project-image" src="img/siren.webp"
+                            style="filter: saturate(150%);"></div>
+                </div>
+            </a>
+            <div id="project8-description" class="project-description">
+                <a href="projects/siren.html">
+                    <span style="color:rgb(144, 157, 222)"><b>Siren</b>
+                        <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" stroke="currentColor" stroke-width="0.5"
+                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </span>
+                </a>
+                <p class="description-text">An AI-powered dash cam to monitor driving behavior via YOLOv8 and
+                    geolocation processing.</p>
             </div>
         </div>
         <div class="project-card">
@@ -228,30 +247,9 @@
                         </svg>
                     </span>
                 </a>
-                <br>A Chrome extension that recreates clicked UI components.
-            </div>
-        </div>
-        <div class="project-card">
-            <a href="projects/siren.html">
-                <div id="project8" class="project"
-                    style="background-image: url('img/generis-bg.webp');filter: saturate(80%);">
-                    <div class="project-category">Embedded AI</div>
-                    <div class="project-image-container"><img class="project-image" src="img/siren.webp"
-                            style="filter: saturate(150%);"></div>
-                </div>
-            </a>
-            <div id="project8-description" class="project-description">
-                <a href="projects/siren.html">
-                    <span style="color:rgb(144, 157, 222)"><b>Siren</b>
-                        <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" stroke="currentColor" stroke-width="0.5"
-                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
-                        </svg>
-                    </span>
-                </a>
-                <br>An AI-powered dash cam to monitor driving behavior.
+                <p class="description-text">A Chrome extension that recreates UI components using an image render, DOM
+                    HTML/CSS, and prompt
+                    chaining for accuracy.</p>
             </div>
         </div>
         <div class="project-card">
@@ -263,7 +261,7 @@
             </a>
             <div id="project3-description" class="project-description">
                 <a href="https://devpost.com/software/group-123">
-                    <span style="color:rgb(144, 157, 222)"><b>Guardian</b>
+                    <span style="color:rgb(144, 157, 222)"><b>Silent 911</b>
                         <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" stroke="currentColor" stroke-width="0.5"
                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -272,11 +270,26 @@
                         </svg>
                     </span>
                 </a>
-                <br>Contextual audio and video analysis of emergencies.
+                <p class="description-text">A multimodal wearable that generates reports for emergency services by
+                    analyzing live video, audio,
+                    and location data with CNNs.</p>
             </div>
         </div>
         <div class="project-card">
-            <a href="https://ballot.hackmit.org/project/ykvho-umiss-fnooy-nxccv">
+            <div id="project5" class="project" style="background-image: url('img/cleanse-bg.webp');">
+                <div class="project-category">Embeddings &amp; Web Scraping</div>
+                <div class="project-image-container"><img class="project-image" src="img/cleanse.webp"
+                        style="filter: saturate(150%);"></div>
+            </div>
+            <div id="project5-description" class="project-description">
+                <span style="color:rgb(144, 157, 222)"><b>Data Cleanser</b></span>
+                <br>A full-stack platform that automates a 20-hour weekly data cleansing process to seconds, using
+                embeddings to recommend top clients.
+            </div>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/alys28/ranked">
                 <div id="project05" class="project"
                     style="background-image: url('img/runk-bg2.webp');filter: saturate(100%);">
                     <div class="project-category">Recommendation Search Engine</div>
@@ -285,8 +298,8 @@
                 </div>
             </a>
             <div id="project05-description" class="project-description">
-                <a href="https://ballot.hackmit.org/project/ykvho-umiss-fnooy-nxccv">
-                    <span style="color:rgb(144, 157, 222)"><b>Runk</b>
+                <a href="https://github.com/alys28/ranked">
+                    <span style="color:rgb(144, 157, 222)"><b>Ranked</b>
                         <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" stroke="currentColor" stroke-width="0.5"
                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -295,7 +308,9 @@
                         </svg>
                     </span>
                 </a>
-                <br>An e-commerce platform with personalized reviews &amp; recommendations.
+                <p class="description-text">An e-commerce platform that uses embeddings to recommend items with positive
+                    reviews from users most
+                    similar to you.</p>
             </div>
         </div>
         <div class="project-card">
@@ -317,7 +332,30 @@
                     </svg>
                 </span>
                 <!-- </a> -->
-                <br>An autonomous vehicle using PID controllers and sensors.
+                <p class="description-text">An autonomous vehicle using PID controllers and sensors.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <a href="projects/spave.html">
+                <div id="project7" class="project" style="background-image: url('img/spave-bg.webp');">
+                    <div class="project-category">Android Dev</div>
+                    <div class="project-image-container"><img class="project-image" src="img/spave.webp"
+                            style="object-position: center top;"></div>
+                </div>
+            </a>
+            <div id="project7-description" class="project-description">
+                <a href="projects/spave.html">
+                    <span style="color:rgb(144, 157, 222)"><b>SPΛVE</b>
+                        <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" stroke="currentColor" stroke-width="0.5"
+                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </span>
+                </a>
+                <p class="description-text">A Google Play store-published budgeting app to optimize user savings when
+                    shopping.</p>
             </div>
         </div>
         <div class="project-card">
@@ -329,7 +367,9 @@
             </div>
             <div id="project4.5-description" class="project-description">
                 <span style="color:rgb(144, 157, 222)"><b>Chrome Extension</b></span>
-                <br>Chrome extension to automate web-updates via component generation.
+                <p class="description-text">A Chrome extension to automate web-updates via component generation and
+                    email scraping to
+                    dynamically update content.</p>
             </div>
         </div>
         <div class="project-card">
@@ -352,7 +392,9 @@
                         </svg>
                     </span>
                 </a>
-                <br>AR environment to enhance networking events.
+                <p class="description-text">An AR environment + AR glasses from scratch to display resumes next to user
+                    faces, enhancing
+                    networking events.</p>
             </div>
         </div>
 
@@ -374,7 +416,8 @@
                         </svg>
                     </span>
                 </a>
-                <br>An EV3 robot to automate food-package assembly.
+                <p class="description-text">An EV3 robot to automate food-package assembly via colour and ultrasonic
+                    sensors.</p>
             </div>
         </div>
         <div class="project-card">
@@ -386,36 +429,10 @@
             </div>
             <div id="project0-description" class="project-description">
                 <span style="color:rgb(144, 157, 222)"><b>Compiler from Scratch</b>
-                    <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" stroke="currentColor" stroke-width="0.5" class="bi bi-box-arrow-up-right"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
-                    </svg>
                 </span>
-                <br>Implemented a compiler (lexer, parser, semantic analysis, code generator), with linker + loader.
-            </div>
-        </div>
-        <div class="project-card">
-            <a href="projects/spave.html">
-                <div id="project7" class="project" style="background-image: url('img/spave-bg.webp');">
-                    <div class="project-category">Android Dev</div>
-                    <div class="project-image-container"><img class="project-image" src="img/spave.webp"
-                            style="object-position: center top;"></div>
-                </div>
-            </a>
-            <div id="project7-description" class="project-description">
-                <a href="projects/spave.html">
-                    <span style="color:rgb(144, 157, 222)"><b>SPΛVE</b>
-                        <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" stroke="currentColor" stroke-width="0.5"
-                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
-                        </svg>
-                    </span>
-                </a>
-                <br>A budgeting app to optimize user savings when shopping.
+                <p class="description-text">Built a C++ compiler for a simplified C, including lexer, parser, semantic
+                    analyzer, code generator,
+                    linker, and loader.</p>
             </div>
         </div>
         <div class="project-card">
@@ -437,7 +454,8 @@
                         </svg>
                     </span>
                 </a>
-                <br>Taught game development and designed a children's programming curriculum.
+                <p class="description-text">Taught software engineering principles and designed a children's programming
+                    curriculum.</p>
             </div>
         </div>
         <div class="project-card">
@@ -460,7 +478,7 @@
                         </svg>
                     </span>
                 </a>
-                <br>Planned a district-wide hackathon of 350+ students.
+                <p class="description-text">Planned a district-wide hackathon of 350+ students.</p>
             </div>
         </div>
         <!-- <div class="project-card">
@@ -478,7 +496,7 @@
                         </svg>
                     </span>
                 </a>
-                <br>An interactive replication of a Super Mario Bros level.
+                <p class="description-text">An interactive replication of a Super Mario Bros level.</p>
             </div>
         </div> -->
     </div>

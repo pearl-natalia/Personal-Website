@@ -1,18 +1,4 @@
 /* Fonts */
-@font-face {
-    font-family: 'Kana Sans';
-    src: url('fonts/Kana Sans Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Kana Sans';
-    src: url('fonts/Kana Sans Regular.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -20,32 +6,42 @@
 a {
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
-
 
 a:hover {
     color: rgb(197, 197, 197);
 }
 
+.contact-btn-container a:hover {
+    color: white;
+}
+
+#light-mode-toggle:hover {
+    filter: brightness(85%);
+}
+
 /* text highlight color */
 ::-moz-selection {
     background: rgba(144, 157, 222, 0.604);
+    color: white;
 }
 
 ::selection {
     background: rgba(144, 157, 222, 0.604);
+    color: white;
 }
 
 /*Body*/
 body {
-    font-family: 'Kana Sans', sans-serif !important;
+    font-family: 'Oxygen', sans-serif !important;
     overflow-x: hidden !important;
     background-color: rgb(0, 0, 0);
     color: white;
     padding-bottom: 3px;
     cursor: default;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -97,7 +93,7 @@ body {
 }
 
 .contact-btn:hover {
-    background-color: rgb(120, 120, 120);
+    background-color: rgb(76, 76, 76);
 }
 
 
@@ -265,6 +261,10 @@ body.light-mode .sun {
 
 body.light-mode .moon {
     opacity: 0;
+}
+
+.description-text {
+    color: #727272;
 }
 
 @media screen and (min-width: 1280px) {
