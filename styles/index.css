@@ -9,9 +9,13 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-a:hover {
-    color: rgb(197, 197, 197);
+#projects:hover,
+#about:hover,
+#school:hover,
+.aboutHover:hover {
+    color: rgb(186, 186, 186);
 }
+
 
 .contact-btn-container a:hover {
     color: white;
@@ -248,10 +252,6 @@ body.light-mode #menu-subtitle-svg {
     fill: black;
 }
 
-body.light-mode #menu-subtitle-svg:hover {
-    fill: rgb(145, 19, 19);
-}
-
 body.light-mode #bio_url:hover {
     color: rgb(121, 121, 121);
 }
@@ -288,6 +288,13 @@ body.light-mode #light-mode-toggle:hover {
 
 #light-mode-toggle:hover {
     filter: brightness(150%);
+}
+
+body.light-mode #projects:hover,
+body.light-mode #about:hover,
+body.light-mode #school:hover,
+body.light-mode .aboutHover:hover {
+    color: rgb(125, 125, 125);
 }
 
 /* desktop */
