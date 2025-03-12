@@ -184,6 +184,7 @@ body {
 }
 
 .project-description a span,
+.project-header,
 .no-link-project {
     color: rgb(144, 157, 222);
     transition: color 0.3s ease-in-out;
@@ -192,6 +193,12 @@ body {
 .project-description a span:hover,
 .no-link-project:hover {
     color: rgb(112, 121, 171);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #about-container {
@@ -341,7 +348,8 @@ body.light-mode .aboutHover:hover {
 
     .contact-btn,
     .project-description,
-    .project-category {
+    .project-category,
+    .present-label {
         font-size: 15px;
     }
 
@@ -405,7 +413,8 @@ body.light-mode .aboutHover:hover {
 
     .contact-btn,
     .project-description,
-    .project-category {
+    .project-category,
+    .present-label {
         font-size: 14px;
     }
 
@@ -475,7 +484,8 @@ body.light-mode .aboutHover:hover {
     }
 
     .project-description,
-    .project-category {
+    .project-category,
+    .present-label {
         font-size: 14px;
     }
 
